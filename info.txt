@@ -1,0 +1,6 @@
+selected resource name:		DEV Update QueueMonitoring Data
+selected resource type:		pipeline
+factory name:			cxpenganalytics
+factory location:		EastUS
+subscription id:		1aa7d767-6630-4006-82a0-e3c417a9b42e
+time of download (UTC):		Fri, 18 Feb 2022 18:46:54 GMT

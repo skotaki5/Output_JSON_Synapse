@@ -1,21 +1,20 @@
 {
-	"name": "LS_Dev_Databricks_ETL_Processing",
-	"type": "Microsoft.Synapse/workspaces/linkedservices",
-	"properties": {
-		"description": "dev_cxpenganalytics_etl_processing",
-		"type": "AzureDatabricks",
-		"typeProperties": {
-			"domain": "https://centralus.azuredatabricks.net",
-			"accessToken": {
-				"type": "AzureKeyVaultSecret",
-				"store": {
-					"referenceName": "KeyVaultCxpEngAnalytics",
-					"type": "LinkedServiceReference"
-				},
-				"secretName": "DatabricksDevToken"
-			},
-			"existingClusterId": "0328-195715-burnt929"
-		},
-		"annotations": []
-	}
+    "name": "LS_Dev_Databricks_ETL_Processing",
+    "properties": {
+        "description": "dev_cxpenganalytics_etl_processing",
+        "type": "AzureDatabricks",
+        "typeProperties": {
+            "domain": "https://centralus.azuredatabricks.net",
+            "accessToken": {
+                "type": "AzureKeyVaultSecret",
+                "store": {
+                    "referenceName": "KeyVaultCxpEngAnalytics",
+                    "type": "LinkedServiceReference"
+                },
+                "secretName": "DatabricksDevToken"
+            },
+            "existingClusterId": "0328-195715-burnt929"
+        },
+        "annotations": []
+    }
 }

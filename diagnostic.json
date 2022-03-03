@@ -1,0 +1,22 @@
+{
+    "now": "2022-02-18T18:46:54.617Z",
+    "perfNow": 1343441.799999997,
+    "diagnosticCorrelation": "731aa849-e810-498c-aaca-9c8f92a21877",
+    "source": "DownloadSupportFiles",
+    "environment": {
+        "productName": "adf",
+        "buildVersion": "1.0.021722.19",
+        "environmentType": 3,
+        "resourceName": "cxpenganalytics",
+        "resourceRegion": "EastUS",
+        "resourceGroup": "cxpenganalytics",
+        "subscriptionId": "1aa7d767-6630-4006-82a0-e3c417a9b42e",
+        "sessionId": "aHuey",
+        "operationId": "sfGal",
+        "gitType": "VSTS"
+    },
+    "additionalInfo": {
+        "selectedResource": "DEV Update QueueMonitoring Data",
+        "selectedResourceType": "pipeline"
+    }
+}

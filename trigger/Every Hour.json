@@ -1,17 +1,27 @@
 {
-	"name": "Every Hour",
-	"properties": {
-		"annotations": [],
-		"runtimeState": "Stopped",
-		"pipelines": [],
-		"type": "ScheduleTrigger",
-		"typeProperties": {
-			"recurrence": {
-				"frequency": "Hour",
-				"interval": 1,
-				"startTime": "2018-09-20T00:00:00Z",
-				"timeZone": "UTC"
-			}
-		}
-	}
+    "name": "Every Hour",
+    "properties": {
+        "annotations": [],
+        "runtimeState": "Started",
+        "pipelines": [
+            {
+                "pipelineReference": {
+                    "referenceName": "DEV Master1hr",
+                    "type": "PipelineReference"
+                },
+                "parameters": {
+                    "trigger_start_time": "@trigger().scheduledTime"
+                }
+            }
+        ],
+        "type": "ScheduleTrigger",
+        "typeProperties": {
+            "recurrence": {
+                "frequency": "Hour",
+                "interval": 1,
+                "startTime": "2018-09-20T00:00:00Z",
+                "timeZone": "UTC"
+            }
+        }
+    }
 }
