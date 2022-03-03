@@ -1,0 +1,64 @@
+{
+	"name": "2_agg_queue_metrics",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "sharedpoolv5",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "51ed9411-3d32-425d-ab17-1894b120e061"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/da74e3ed-9c9a-4605-8fae-10f3492c0f5c/resourceGroups/Data-CoE/providers/Microsoft.Synapse/workspaces/synapsekeyvault/bigDataPools/sharedpoolv5",
+				"name": "sharedpoolv5",
+				"type": "Spark",
+				"endpoint": "https://synapsekeyvault.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/sharedpoolv5",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "3.1",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"print(\"hello world\")"
+				],
+				"attachments": null,
+				"execution_count": 2
+			}
+		]
+	}
+}

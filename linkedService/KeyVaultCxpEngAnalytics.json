@@ -1,0 +1,11 @@
+{
+	"name": "KeyVaultCxpEngAnalytics",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://cxpenganalytics.vault.azure.net/"
+		},
+		"annotations": []
+	}
+}
